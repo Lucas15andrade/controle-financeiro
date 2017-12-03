@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-// Controlador atualizar finance
+// Controlador atualizar finance.
 package controle;
 
 import java.net.URL;
