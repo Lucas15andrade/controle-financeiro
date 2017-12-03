@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderFinance" prefHeight="455.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.ControladorFinance">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabela" layoutX="-1.0" layoutY="-1.0" prefHeight="257.0" prefWidth="568.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="colunaId" prefWidth="75.0" text="IDDizimo" />
+                <TableColumn fx:id="colunaValor" prefWidth="111.0" text="Valor" />
+                  <TableColumn fx:id="colunaData" prefWidth="117.0" text="Data" />
+                  <TableColumn fx:id="colunaCulto" prefWidth="161.0" text="Culto" />
+                  <TableColumn fx:id="colunaTalao" prefWidth="135.0" text="Talão" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="49.0" prefWidth="568.0" style="-fx-background-color: #72CCC9;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botaoCriar" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#cliqueFinance" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="botaoRemover" layoutX="62.0" layoutY="5.0" mnemonicParsing="false" onAction="#cliqueFinance" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/remove.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="botaoEditar" layoutX="110.0" layoutY="6.0" mnemonicParsing="false" onAction="#cliqueFinance" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

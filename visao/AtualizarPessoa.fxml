@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.ControladorAtualizarPessoa">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #72CCC9;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="46.0" layoutY="105.0" text="Nome:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="campoNome" layoutX="46.0" layoutY="130.0" prefHeight="25.0" prefWidth="195.0" />
+            <Label layoutX="339.0" layoutY="105.0" text="Telefone:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="campoTelefone" layoutX="339.0" layoutY="130.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField fx:id="campoEndereco" layoutX="46.0" layoutY="188.0" prefHeight="25.0" prefWidth="195.0" />
+            <Label layoutX="46.0" layoutY="163.0" text="Endereço" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="campoRol" layoutX="339.0" layoutY="188.0" prefHeight="25.0" prefWidth="81.0" />
+            <Label layoutX="339.0" layoutY="163.0" text="Rol:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="botaoSalvar" layoutX="43.0" layoutY="255.0" mnemonicParsing="false" onAction="#atualizarPessoa" text="Salvar" />
+            <Button fx:id="botaoLimpar" layoutX="120.0" layoutY="255.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+            <Button fx:id="botaoFechar" layoutX="198.0" layoutY="255.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
